@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.mbox-projects{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    width: 90%;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.mbox-projects p{
+    color: white;
+    font-size: 40px;
+    font-family: 'Libre Baskerville', serif;
+    height: 60px;
+}
+.project-items{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 600px;
+    width: 100%;
+    position: relative;
+}
+
+.items{
+    height: 40%;
+    width: 30%;
+    border-radius:15px ;
+    background-image: url("images/bg.jpg");
+    transition: all 0.2s ease;
+}
+.items:hover{
+    cursor: pointer;
+    height: 43%;
+    width: 33%;
+}
