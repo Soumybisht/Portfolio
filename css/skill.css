@@ -11,11 +11,11 @@
     box-sizing: border-box;
 }
 .mbox-skills h1{
-    color: white;
+    color: #f8d56e;
     font-size: 40px;
     position: relative;
-    font-weight: 400;
-    font-family: 'Libre Baskerville', serif;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
 }
 .flexs{
     display: flex;
@@ -34,6 +34,10 @@
     flex-direction: column;
     color: white;
 }
+.languages{
+    position: relative;
+    bottom: 30px;
+}
 .front-end{
     position: relative;
     top: 40px;
@@ -51,7 +55,7 @@
 }
 
 .front-end img,.languages img{
-    height: 60px;
+    height: 80px;
     position: relative;
     top: 5px;
 }

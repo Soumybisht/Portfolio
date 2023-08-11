@@ -48,6 +48,9 @@ body{
     url("images/exploremore4.jpg");
     background-attachment: fixed;
     background-size: cover;
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+
 }
 
 .outer-centerbox::-webkit-scrollbar{
@@ -300,7 +303,11 @@ body{
     font-size: 12px;
     color: white;
     position: relative;
-    right: 9px;
+    right: 15px;
+  }
+  .circle-tag p:nth-child(2){
+    position: relative;
+    right: 22px;
   }
   .skill-bar{
     display: flex;
@@ -439,6 +446,7 @@ body{
   .about-me p{
     font-size: 40px;
     position: relative;
+  
 
   }
   .about-me span{
@@ -450,11 +458,13 @@ body{
   .aboutme-data span{
     font-family: 'Lato', sans-serif;
     line-height: 2;
+    font-size: 20px;
   }
   .aboutme-data p{
     
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+    color: #f8d56e;
   }
 
   .qualification-box{
@@ -465,11 +475,13 @@ body{
     height: 100vh;
     width: 80vw;
     color: white;
+    
   }
   .quali-heading {
     font-size: 40px;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Montserrat', sans-serif;
     position: relative;
+    font-weight: 600;
     top: 20px;
     color: #f8d56e;
   }
@@ -481,6 +493,7 @@ body{
     align-items: center;
     position: relative;
     top: 30px;
+    flex-wrap: wrap;
   }
   .qualification-items{
     height:60%;
@@ -495,9 +508,10 @@ body{
   }
 
   .qitem-heading{
-    font-size: 37px;
+    font-size: 35px;
     color: white;
     font-weight: 500;
+    font-family: 'Libre Baskerville', serif;
   }
   .qitem-text{
     font-size: 16px;
@@ -527,9 +541,9 @@ body{
   }
   .contact-heading{
     font-size: 40px;
-    color: white;
-    font-weight: ;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #f8d56e;
   }
   .get-in-touch{
     height: 40%;
@@ -554,6 +568,8 @@ body{
     font-size: 30px;
     text-align: center;
     color: white;
+    font-family: 'Libre Baskerville', serif;
+
   }
   .git-data{
     display: flex;
@@ -646,6 +662,15 @@ body{
   font-size: 30px;
     text-align: center;
     color: white;
+    font-family: 'Libre Baskerville', serif;
+}
+form{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
 }
 .message-data{
   color: white;
@@ -662,7 +687,8 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: start;
+  align-items: center;
+  
 
 }
 .message-right{
@@ -672,6 +698,7 @@ body{
   flex-direction: column;
   justify-content: space-evenly;
   align-items: end;
+  position: relative;
 
 }
 .message-right input{
@@ -679,15 +706,29 @@ body{
   height: 13%;
   border-radius: 20px;
   color: #FFBF00;
+  
 }
-.message-me button{
+.message-right textarea{
+  width: 100%;
+  border-radius: 10px;
+  color: #FFBF00;
+  position: relative;
+  top: 20px;
+}
+.input{
+  position: relative;
+  bottom: 25px;
+}
+.message-me .button{
   height: 40px;
   width: 100px;
   border-radius: 10px;
   background-color: #ffbf00df;
   color: white;
+  position: relative;
+  left: 290px;
 }
-.message-me button:hover{
+.message-me .button:hover{
   background-color: #ffbf00df;
   box-shadow: 0.5px 0.5px 10px rgb(247, 243, 6);
   cursor: pointer;
