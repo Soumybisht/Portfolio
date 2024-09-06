@@ -238,11 +238,9 @@ body{
 .circle1{
     width: 55px;
     height: 55px;
-    background-image: conic-gradient(
-      rgb(255, 191, 0) 0deg,
-      rgb(255, 191, 0) 250deg,
-      #262626 250deg,
-      #262626 360deg
+    background: conic-gradient(
+      rgb(255, 191, 0) 3.6deg,
+      rgb(31, 31, 31) 0deg
     );
     border: 2px solid #262626;
     border-radius: 50%;
@@ -250,6 +248,7 @@ body{
     justify-content: center;
     align-items: center;
   }
+  
   .circle2{
     width: 55px;
     height: 55px;
@@ -342,22 +341,71 @@ body{
     margin: 5px;
     
   }
+
   .bar span{
     float: left;
     height: 6px;
     background-color: #FFBF00;
   }
+
+  .loadanimation1{
+    animation: loadanimation1 2s 1.2s ease-out forwards;
+  }
+  .loadanimation2{
+    animation: loadanimation2 2s 1.5s ease-out forwards;
+  }
+  .loadanimation3{
+    animation: loadanimation3 2s 1.8s ease-out forwards;
+  }
+  .loadanimation4{
+    animation: loadanimation4 2s 2s ease-out forwards;
+  }
+
+  @keyframes loadanimation1{
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 80%;
+    }
+  }
+  @keyframes loadanimation2{
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 60%;
+    }
+  }
+  @keyframes loadanimation3{
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 30%;
+    }
+  }
+  @keyframes loadanimation4{
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 90%;
+    }
+  }
+
+
   .html-bar{
-    width:80%;
+    width:0%;
   }
   .css-bar{
-    width:60%;
+    width:0%;
   }
   .javascript-bar{
-    width:30%;
+    width:0%;
   }
   .selenium-bar{
-    width:90%;
+    width:0%;
   }
   .profile-line{
     display: flex;
@@ -424,11 +472,16 @@ body{
   }
   .explore-text{
     position: relative;
-    top: 15px;
+    top: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 70%;
     font-size: 19px;
     color: white;
     font-family: 'Source Code Pro', monospace;
   }
+  
   .exploremore-box img{
     height: 380px;
     position: relative;
@@ -505,7 +558,40 @@ body{
     align-items: center;
     position: relative;
     bottom: 40px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
   }
+
+  .appear2{
+    animation: moves 0.6s ease forwards;
+  }
+  .appear3{
+    animation: pop-up 0.8s ease forwards;
+  }
+  
+  @keyframes moves {
+    from{
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes pop-up{
+  0%{
+      transform: translateY(-300px);
+      opacity: 0;
+  }
+  70%{
+      transform: translateY(30px);
+  }
+  100%{
+      transform: translateY(0px);
+       opacity:1;
+  }
+}
 
   .qitem-heading{
     font-size: 35px;

@@ -43,6 +43,11 @@
     background-image: url("images/project1.png");
     background-position: center;
     background-size: cover;
+    opacity: 0;
+}
+.projectappear1{
+    animation: projectanimation1 1s ease forwards;
+    opacity: 1;
 }
 
 .items:nth-child(2){
@@ -50,30 +55,55 @@
     background-position: center;
     background-size: cover;
     background-position: center;
+    opacity: 0;
+}
+.projectappear2{
+    animation: projectanimation1 1s  ease forwards;
+    opacity: 1;
 }
 .items:nth-child(3){
     background-image: url("images/project1.png");
     background-position: center;
     background-size: cover;
     background-position: center;
+    opacity: 0;
+}
+.projectappear3{
+    animation: projectanimation1 1s   ease forwards;
+    opacity: 1;
 }
 .items:nth-child(4){
     background-image: url("images/project1.png");
     background-position: center;
     background-size: cover;
     background-position: center;
+    opacity: 0;
+}
+.projectappear4{
+    animation: projectanimation1 1s  ease forwards;
+    opacity: 1;
 }
 .items:nth-child(5){
     background-image: url("images/project1.png");
     background-position: center;
     background-size: cover;
     background-position: center;
+    opacity: 0;
+}
+.projectappear5{
+    animation: projectanimation1 1s  ease forwards;
+    opacity: 1;
 }
 .items:nth-child(6){
     background-image: url("images/project1.png");
     background-position: center;
     background-size: cover;
     background-position: center;
+    opacity: 0;
+}
+.projectappear6{
+    animation: projectanimation1 1s 5s ease forwards;
+    opacity: 1;
 }
 
 .items:hover{
@@ -130,6 +160,18 @@
     color: white;
     font-size: 12px;
 }
-.srms h2{
-    
+
+@keyframes projectanimation1{
+    0%{
+        opacity: 0;
+        scale: 0;
+    }
+    50%{
+        opacity: 1;
+        scale: 1.05;
+    }
+    100%{
+        opacity: 1;
+        scale: 1;
+    }
 }

@@ -10,6 +10,10 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+.animation2{
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
 .mbox-skills h1{
     color: #f8d56e;
     font-size: 40px;
